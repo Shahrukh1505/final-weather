@@ -13,7 +13,7 @@ const Container = ()=>{
     
     
     fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${search}&APPID=d765d356ebd7e11900c84780738686b3&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=d765d356ebd7e11900c84780738686b3&units=metric`
       )
         .then((res) => {
           if (res.ok) {
