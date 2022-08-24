@@ -8,12 +8,13 @@ const Container = ()=>{
    
    const [date, setDate] = useState("0000-00-00");
    
+   const API_KEY = process.env.REACT_APP_API_KEY;
    
    function ifClicked(){
     
     
     fetch(
-        `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=d765d356ebd7e11900c84780738686b3&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${API_KEY}&units=metric`
       )
         .then((res) => {
           if (res.ok) {
